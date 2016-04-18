@@ -15,6 +15,7 @@
         "dataTypeDefaultValue" : "NSData()"
         
     },
+    "staticImports" : "\nimport RealmSwift\n",
     "modelDefinition": "\nclass <!EntityName!> : <!ParentName!>",
     "modelStart": "{\n",
     "modelEnd": "\n}",
@@ -22,7 +23,7 @@
     "attributeDefinationWithDefaultValue": "\tdynamic var <!AttrName!> : <!AttrType!> = <!AttrDefaultValue!>\n",
     
     "toOneRelationshipDefination": "\tdynamic var <!RelationshipName!>: <!RelationshipType!>?\n",
-    "toManyRelationshipDefination": "\tdynamic var <!RelationshipName!> = RLMArray(objectClassName: <!RelationshipType!>.className())\n",
+    "toManyRelationshipDefination": "\tlet <!RelationshipName!> = List<<!RelationshipType!>>()\n",
     
     "indexedAttributesDefination" : "\n\toverride class func attributesForProperty(propertyName: String) -> RLMPropertyAttributes\n    {\n\t\tvar attrs = super.attributesForProperty(propertyName)\n\t\tvar indexedProperties = [String]()\n<!IndexedPropertiesReplacement!>\n\t\tif find(indexedProperties, propertyName) != nil{\n\t\t\tattrs |= RLMPropertyAttributes.AttributeIndexed\n\t\t}\n\n\t\treturn attrs\n\t}\n",
     "forEachIndexedAttribute" : "\t\tindexedProperties.append(\"<!AttrName!>\")\n",

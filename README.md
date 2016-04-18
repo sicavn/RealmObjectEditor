@@ -1,5 +1,11 @@
 Realm Object Editor
 ==========
+Copyright @ 2016 sica.vn
+Clone from https://github.com/Ahmed-Ali/RealmObjectEditor
+
+Fix some bug with Realm Swift 0.98.8
+
+
 [Realm](http://realm.io) Object Editor is a visual editor where you can create your Realm entities, attributes and relationships inside a nice user interface. Once you finish, you can export your schema document for later use and you can export your objects in Swift, Objective-C and Java.
 
 Using Realm Object Editor you will be able to:
@@ -32,6 +38,7 @@ The following screenshots should give you an idea of how the ROE works.
 Installation
 ========================
 Kindly clone the project, and build it using Xcode 6.1+ on any Mac OS X 10.10 or above.
+Install and test with Realm Swift 0.98.8
 
 To Do
 ========================
