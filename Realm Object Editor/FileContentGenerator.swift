@@ -174,7 +174,7 @@ class FileContentGenerator {
         for (index, attr) in entity.attributes.enumerate(){
             
             var attrDefination = ""
-            if lang.attributeDefinationWithDefaultValue != nil && lang.attributeDefinationWithDefaultValue.characters.count > 0 && attr.hasDefault{
+            if lang.attributeDefinationWithDefaultValue != nil && lang.attributeDefinationWithDefaultValue.characters.count > 0 && (attr.hasDefault || lang.fileExtension == "swift") {
                 attrDefination = lang.attributeDefinationWithDefaultValue
                 
                 let defValue = defaultValueForAttribute(attr, types: types)

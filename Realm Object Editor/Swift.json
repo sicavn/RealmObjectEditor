@@ -3,17 +3,22 @@
     "defaultSuperClass" : "Object",
     "dataTypes": {
         "intType": "Int",
+        "intTypeDefaultValue": "0",
         "boolType": "Bool",
+        "boolTypeDefaultValue": "false",
         "floatType": "Float",
+        "floatTypeDefaultValue": "0",
         "doubleType": "Double",
+        "doubleTypeDefaultValue": "0",
         "longType": "Double",
+        "longTypeDefaultValue": "0",
         "stringType": "String",
+        "stringTypeDefaultValue": "",
         "stringTypeQuotedValue" : "\"<!QuotedValue!>\"",
         "dateType": "NSDate",
         "dateTypeDefaultValue" : "NSDate()",
         "dataType": "NSData",
         "dataTypeDefaultValue" : "NSData()"
-        
     },
     "staticImports" : "\nimport RealmSwift\n",
     "modelDefinition": "\nclass <!EntityName!> : <!ParentName!>",
